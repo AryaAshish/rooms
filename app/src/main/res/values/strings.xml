@@ -1181,6 +1181,13 @@
         <item>101</item>
         <item>79</item>
     </string-array>
+    <string name="title_activity_show_location_on_map">Map</string>
+
+    <string name="app_description">Description.</string>
+
+    <string name="app_developers">Developer names.</string>
+
+    <string name="common_description">We are creating something awesome.</string>
 
 </resources>
 

@@ -2,16 +2,19 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
     defaultConfig {
-        applicationId "com.aryan.android.oyo"
-        minSdkVersion 15
-        targetSdkVersion 26
+        applicationId "com.aryan.android.kangaroocust"
+        minSdkVersion 22
+        targetSdkVersion 28
         multiDexEnabled true
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+    }
+    lintOptions {
+        checkReleaseBuilds false
     }
     buildTypes {
         release {
@@ -29,6 +32,7 @@ repositories {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -48,4 +52,11 @@ dependencies {
     implementation "com.google.firebase:firebase-database:16.0.3"
     implementation "com.google.firebase:firebase-storage:16.0.3"
     implementation "com.google.firebase:firebase-core:16.0.6"
+    implementation 'com.firebase:firebase-client-android:2.5.2+'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation('com.paytm:pgplussdk:1.2.3') {
+        transitive = true;
+    }
 }

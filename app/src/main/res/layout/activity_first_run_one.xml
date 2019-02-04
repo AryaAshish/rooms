@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.aryan.android.oyo.FirstRunOneActivity"
+    tools:context=".FirstRunOneActivity"
     android:orientation="vertical"
     android:background="@drawable/background_color_1"
 
@@ -16,54 +16,54 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Kangaroo rooms"
+        android:text="Kangaroo Rooms"
         android:textColor="#FFFFFF"
         android:textSize="60sp"
         android:textStyle="bold"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
-<!--
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/oyo"
-        android:id="@+id/scene_root">
-             <include layout="@layout/a_scene" />
-    </FrameLayout>
-
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/scene_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/oyo"
-        android:visibility="gone">
-        <LinearLayout
-            android:id="@+id/free_wifi_layout"
+    <!--
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
-        <TextView
-            android:id="@+id/free_wifi"
+            android:layout_below="@id/kangaroocust"
+            android:id="@+id/scene_root">
+                 <include layout="@layout/a_scene" />
+        </FrameLayout>
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scene_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:layout_c
-            android:fontFamily="monospace"
-            android:text="Free Wi-Fi" />
-        </LinearLayout>
-        <TextView
-            android:id="@+id/ac_rooms"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/free_wifi_layout"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:fontFamily="monospace"
-            android:text="AC Rooms"/>
-    </RelativeLayout>
--->
+            android:layout_height="match_parent"
+            android:layout_below="@id/kangaroocust"
+            android:visibility="gone">
+            <LinearLayout
+                android:id="@+id/free_wifi_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+            <TextView
+                android:id="@+id/free_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_c
+                android:fontFamily="monospace"
+                android:text="Free Wi-Fi" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/ac_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/free_wifi_layout"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:fontFamily="monospace"
+                android:text="AC Rooms"/>
+        </RelativeLayout>
+    -->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_height="match_parent"
